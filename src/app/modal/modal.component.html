@@ -1,0 +1,24 @@
+
+<div *ngIf="isShowing">
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__ modal__content">
+        <div class="modalContent__ modalContent__header modalHeader">
+          <div class="modalHeader__ modalHeader__title">Add New Instrument</div>
+          <div class="modalHeader__ modalHeader__navigation">
+
+            <div>
+              <button class="button_modal"
+                      (click)="closeModal()">Cancel</button>
+              <button class="button_modal" (click)="closeModal()">Done</button>
+            </div>
+          </div>
+        </div>
+        <div class="modalContent__ modalContent__body">
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

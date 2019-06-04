@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ModalService} from './modal.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'testapp';
+  constructor(private modalService: ModalService) {
+  }
+
+  openModalOne() {
+    this.modalService.open();
+  }
+
+  openModalTwo() {
+    this.modalService.open();
+  }
+
+  openModalThree() {
+    this.modalService.open();
+  }
+
 }
